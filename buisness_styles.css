@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #fff;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://lh3.googleusercontent.com/d/1oerjSHevUp2r1jZw6s2fOWvBuMYCtWny");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    background-color: #f8f9fa;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #343a40;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+}
+.navbar-brand:hover {
+    color: #007bff;
+    transform: scale(1.08) rotate(-2deg);
+}
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    font-size: 1.25rem;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' ... %3C/svg%3E");
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-item {
+    margin-right: 1rem;
+}
+.nav-link {
+    color: #343a40;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    transition: color 0.2s;
+}
+.nav-link:hover, .nav-item.active .nav-link {
+    color: #007bff;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.2s, border 0.2s;
+    cursor: pointer;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+.blockquote {
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-left: .25rem solid #eceeef;
+    background: #f8f9fa;
+    font-size: 1.25rem;
+    color: #555;
+}
+
+
+.rounded-circle {
+    border-radius: 50% !important;
+    object-fit: cover;
+}
+
+
+.mt-4 { margin-top: 1.5rem !important; }
+.mb-0 { margin-bottom: 0 !important; }
+.mb-2 { margin-bottom: .5rem !important; }
+.py-4 { padding-top: 1.5rem !important; padding-bottom: 1.5rem !important; }
+
+
+footer {
+    background: #f8f9fa;
+    color: #555;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+
+.fa, .fas {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2") format("woff2");
+}
+
+
+h1, h2, h5 {
+    font-weight: 700;
+    outline: oldlace;
+}
+ul {
+    padding-left: 1.5rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.text-center {
+    text-align: center !important;
+}
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+.mouse-pointer {
+    cursor: url("https://cur.cursors-4u.net/cursors/cur-9/cur817.ani"), auto;
+}
+.mouse-pointer:hover {
+    cursor: url("https://cur.cursors-4u.net/cursors/cur-2/cur104.cur"), pointer;
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    text-align: left;
+}
+.table th, .table td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+}
+.table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+.table-striped tbody {
+    background-color: #f2f2f2;
+}
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem; 
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2.5rem; 
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #ffc107; 
+}
+
+a {
+    cursor: url("https://cur.cursors-4u.net/cursors/cur-9/cur817.ani"), auto !important;
+}
+
+a:hover {
+    cursor: url("https://cur.cursors-4u.net/cursors/cur-2/cur104.cur"), pointer !important;
+}
